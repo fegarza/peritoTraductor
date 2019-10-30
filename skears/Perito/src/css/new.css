@@ -1,0 +1,751 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Coda', cursive;
+
+
+#F88B5A
+865C21
+*/
+
+
+/*
+    MAIN SETTINGS
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    cursor: pointer;
+    user-select: none;
+}
+
+ul,
+li {
+    list-style: none;
+    ;
+}
+
+html {}
+
+body {
+
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white;
+    background-attachment: fixed;
+}
+
+.cont {
+    width: 100%;
+    height: 100%;
+    max-width: 1600px;
+    display: flex;
+}
+
+/*
+    NAVIGATOR
+*/
+nav {
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+}
+
+nav .cont {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: normal;
+    font-family: 'Coda', cursive;
+    font-size: 30px;
+    color: #f8f8f8;
+}
+
+.logo b {
+    font-family: 'Coda', cursive;
+    color: #EF520B;
+}
+
+nav .menu {
+    height: 100%;
+}
+
+nav .menu ul {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+nav .menu ul li {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu ul li a {
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+nav .menu ul li a:hover {
+    color: #EF520B !important;
+}
+
+/*
+    SLIDER
+*/
+
+header {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #252934;
+    overflow: hidden;
+    padding: 40px 0px;
+}
+
+header .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .fb-page {
+    width: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.48);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+header .welcome {
+    width: 600px;
+    padding: 40px;
+    color: white;
+}
+
+header .welcome h1 {
+    color: #EF520B;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+header .welcome h2 {
+    font-weight: 500;
+}
+
+/*
+    INFORMATION
+*/
+
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: white;
+    padding: 60px 0px;
+}
+
+.information .cont {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information h1 {
+    border-bottom: 2px solid #EF520B;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    width: 600px;
+    text-align: center;
+    color: #171717;
+
+}
+
+.information .grid {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -30px;
+}
+
+.information .info {
+
+    grid-column: 1, 2;
+    width: 500px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.29);
+
+}
+
+.information .info p {
+    padding: 10px;
+    box-sizing: border-box;
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.information .info .info_img {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.information .info:nth-child(1) .info_img {
+    background: url(../img/grid/grid1.jpg) center /cover;
+}
+
+.information .info:nth-child(2) .info_img {
+    background: url(../img/grid/grid2.jpg) center /cover;
+}
+
+.information .info:nth-child(3) .info_img {
+    background: url(../img/grid/grid3.jpg) center /cover;
+}
+
+.information .info:nth-child(4) .info_img {
+    background: url(../img/grid/grid4.jpg) center /cover;
+}
+
+.information .info:nth-child(5) .info_img {
+    background: url(../img/grid/grid5.jpg) center /cover;
+}
+
+.information .info:nth-child(6) .info_img {
+    background: url(../img/grid/grid6.jpg) center /cover;
+}
+
+.information .info:hover > .info_img p {
+    top: 0%;
+}
+
+.information .info .info_img p {
+    width: 100%;
+    height: 100%;
+    background: rgba(239, 82, 11, 0.85);
+    color: white;
+    padding: 50px;
+    box-sizing: border-box;
+    font-size: 18px;
+    position: absolute;
+    top: -100%;
+    transition: 0.2s top;
+    cursor: pointer;
+    text-align: justify;
+}
+
+/*
+    DATA
+*/
+.data {
+    background: #EF520B;
+    width: 100%;
+    height: 120px;
+
+
+    display: flex;
+    justify-content: center;
+}
+
+.data .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data .cont div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.data .cont div h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.data .cont div h2 {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/*
+    CERTIFIED
+*/
+
+.certified {
+    padding: 60px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #ffffff;
+}
+
+.certified .cont {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certified h1 {
+    border-bottom: 2px solid #EF520B;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px;
+    width: 600px;
+    text-align: center;
+}
+
+.certified_cont {
+    height: 300px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certified_cont .left {
+    height: 100%;
+    width: 100%;
+}
+
+.certified_cont .middle {
+    width: 600px;
+    height: 100%;
+    background: url(../img/logo.jpg) no-repeat center #c6c6c6;
+    background-size: cover;
+    margin: 0px 20px;
+}
+
+.certified_cont .right {
+    width: 100%;
+    height: 100%;
+}
+
+.box {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.box h5 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #EF520B;
+}
+
+.box p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 15px;
+    text-align: justify;
+    color: #272727;
+}
+
+
+.pdfs {
+    background: #EF520B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 70px 0px;
+}
+
+.pdfs .cont {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pdfs h1 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+    height: 30px;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.pdfs_cont {
+    margin-top: 60px;
+}
+
+/*
+    CONTACT
+*/
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background: white;
+    height: 600px;
+}
+
+.contact .cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .cont h1 {
+    border-bottom: 2px solid #EF520B;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    width: 600px;
+    text-align: center;
+    color: #171717;  
+}
+
+.contact .contact_cont {
+    width: 100%;
+    margin-top: 40px;
+    height: 400px;
+
+}
+
+.contact .contact_cont form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact_cont form .form_top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact_cont form .left {
+    width: 100%;
+}
+
+.contact .contact_cont form .right {
+    width: 100%;
+}
+
+.contact .left {
+    margin-right: 40px;
+}
+
+.contact .left input {
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    background: #e3e3e3;
+    border: 0px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.contact .left p {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.contact .right p {
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.contact .right textarea {
+    background: #e3e3e3;
+    width: 100%;
+    height: 220px;
+    border-radius: 2px;
+}
+
+.contact button {
+    width: 100%;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.contact button:nth-child(2) {
+    background: #7c7c7c;
+    border-bottom: 15px solid #555555;
+}
+
+.contact button:nth-child(3) {
+    background: #EF520B;
+    border-bottom: 15px solid #a53300;
+}
+
+.contact button:nth-child(2):hover {
+    border-bottom: 10px solid #555555;
+    margin-top: 25px;
+}
+
+.contact button:nth-child(3):hover {
+    border-bottom: 10px solid #a53300;
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width:1600px) {
+    .cont {
+        max-width: 1200px;
+    }
+
+    .information .info {
+        width: 570px;
+
+    }
+
+    .info_img {}
+
+    .pdfs_cont {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    header .cont {}
+
+    nav {
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        width: 100%;
+    }
+
+    nav .cont {
+        max-width: 100%;
+        padding: 0px 20px;
+    }
+
+    .cont {
+        max-width: 800px;
+    }
+
+    .information .info {
+        width: 800px;
+
+    }
+
+    .info_img {}
+
+}
+
+@media screen and (max-width:900px) {
+
+    header .cont {
+        flex-direction: column-reverse;
+    }
+
+    header {
+        padding: 0px;
+        padding-bottom: 0px;
+        margin-bottom: -50px;
+        height: 850px;
+    }
+
+    header .welcome {
+        margin: 0px !important;
+        text-align: center;
+    }
+
+    .welcome h1 {
+        font-size: 20px;
+    }
+
+    .welcome h2 {
+        font-size: 18px;
+    }
+
+    .slider .slide p {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+    .slider .slider_cont {
+        height: 500px;
+    }
+
+    .slider .slide_info {
+        height: 200px;
+    }
+
+    nav .cont {
+        justify-content: center;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    header {}
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .information .info {
+        border-radius: 0px;
+    }
+
+    .certified {
+        height: auto;
+    }
+
+    .certified .cont {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .certified_cont {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .certified .cont .middle {
+        display none;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    .contact {
+        align-items: center;
+        padding: 40px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+    }
+
+    .contact form {
+        height: 100% !important;
+    }
+
+    .contact_cont {
+        height: 100% !important;
+    }
+
+    .contact_cont .form_top {
+        flex-direction: column;
+        width: 80% !important;
+    }
+
+    .contact_cont .form_top .left {
+        width: 100%;
+        margin: 0px;
+        box-shadow: border-box;
+
+    }
+
+    .contact_cont .form_top .left input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact .right {
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .contact .right textarea {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .contact h1 {}
+
+    .contact button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header .welcome {
+        display: none;
+    }
+
+    header {
+        height: 700px;
+    }
+
+    nav .cont .logo {
+        font-size: 20px;
+    }
+
+    .info {
+        height: 230px;
+    }
+
+    .information .info_img {
+        height: 200px !important;
+    }
+
+    h1 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+}

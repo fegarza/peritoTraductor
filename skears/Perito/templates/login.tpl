@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coda:400,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+{if isset($error)}
+    {$error}
+{/if}
+    <div class="cont">
+      
+       <form action="/login.php" method="POST">
+       <h1>LOGIN</h1>
+        <input placeholder="Introduce tu email" type="email" name="email"/>
+        <input placeholder="Introduce tu password" type="password" name="pw"/>
+        <button type="submit">INICIAR SESION</button>
+        </form>
+    </div>
+</body>
+</html>

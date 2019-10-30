@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #F9FAFB;
+    height: 100%;
+   
+}
+
+header{
+    height: 60px;
+    background: #252934;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.containter{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 1600px;
+    width: 100%;
+}
+h1{
+    font-size: 20px;
+}
+header h1{
+    color: #ffffff;
+    
+
+}
+header .containter{
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.cont{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #F9FAFB;
+    padding-top: 20px;
+}
+.right{
+    width: 100%;
+    
+}
+.menu{
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+     
+    -webkit-box-sizing: border-box;
+     
+            box-sizing: border-box;
+}
+.menu_cont{
+    width: 100%;
+    background: #ffffff;
+    height: auto;
+    padding: 10px;
+    
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.menu_cont button{
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ffffff;
+    color: #606060;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+.menu_cont button:hover{
+    color: red;
+}
+.mails{
+    width: 100%;
+     padding-left: 20px;
+}
+.mails h1{
+    color: #454545;
+    margin-bottom: 20px;
+     
+}
+.mails .mail{
+    background: #ffffff;
+    height: auto;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+      margin-bottom: 40px;
+}
+.mail h5{
+    font-size: 15px;
+    padding: 10px;
+    color: #696969;
+}
+.mail p{
+    padding: 20px;
+    background: #f0f0f0;
+    font-size: 14px;
+}
+.mail a{
+    padding: 10px;
+    width: 100%;
+    background: #00b200;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 20px;
+}
+.mail .btn{
+    padding: 10px;
+    width: 100%;
+    background: #ed3833;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor:pointer;
+}
+.mail_next{
+    padding: 20px;
+    width: 100%;
+    background: white;
+  
+     border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.21);
+}
+@media screen and (max-width:1600px){
+    .containter{
+         max-width: 90%;
+        
+    }
+}
+@media screen and (max-width:800px){
+    .cont .containter{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        
+    }
+    .menu{
+        width: 100%;
+        
+        margin-bottom: 20px;
+    }
+    
+    .right .mails{
+        padding: 0px;
+    }
+}

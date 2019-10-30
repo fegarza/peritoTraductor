@@ -1,0 +1,75 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Coda', cursive;
+
+
+#F88B5A
+865C21
+*/
+
+
+/*
+    MAIN SETTINGS
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.error{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+    background: darkred;
+    color: white;
+    text-align: center;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background: #252934;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .cont{
+    width: 300px;
+    height:  300px;
+    background: #EF520B;
+    padding: 20px;
+    border-radius: 10px;
+}
+body .cont form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body .cont form input{
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+body .cont form button{
+    width: 100%;
+    height: 50px;
+    background: green;
+    color: white;
+    font-weight: 600;
+    border:0px;
+    border-radius: 10px;
+}
+body .cont h1{
+    color: white;
+    padding-bottom: 40px;
+}
